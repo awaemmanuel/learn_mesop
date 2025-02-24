@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "learn-mesop"
+version = "0.1.0"
+description = ""
+authors = ["Emmanuel Awa <eawa@brandeis.edu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mesop = "^0.14.1"
+gunicorn = "^23.0.0"
+anthropic = "^0.46.0"
+google-generativeai = "^0.8.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
