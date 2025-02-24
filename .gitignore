@@ -1,101 +1,7 @@
-# Environment and secrets
-.env
-.env.*
-!.env.example
-.streamlit/secrets.toml
-
-# Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# Virtual Environment
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# IDE
-.idea/
-.vscode/
-*.swp
-*.swo
-.DS_Store
-
-# Project specific
-vector_store/
-.cache/
-*.log
-logs/
-*.db
-*.sqlite3
-*.pkl
-backups/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-*.ipynb
-
-# Testing
-.coverage
-.pytest_cache/
-htmlcov/
-coverage.xml
-.tox/
-
-# Distribution
-*.manifest
-*.spec
-.Python
-*.pyc
-*.pyo
-*.pyd
-
-# Streamlit
-.streamlit/secrets.toml
-.streamlit/*.pid
-.streamlit/watch*
-.streamlit/.stats*
-
-# Redis
-dump.rdb
-*.rdb
-
-# Large files and data
-*.csv
-*.json
-!package.json
-*.parquet
-*.h5
-*.pkl
-*.model
-*.bin
-
-# Temporary files
-*.bak
-*.tmp
-*~
-.*.sw[po]
 
 # C extensions
 *.so
@@ -188,6 +94,12 @@ ipython_config.py
 #   install all needed dependencies.
 #Pipfile.lock
 
+# UV
+#   Similar to Pipfile.lock, it is generally recommended to include uv.lock in version control.
+#   This is especially recommended for binary packages to ensure reproducibility, and is more
+#   commonly ignored for libraries.
+#uv.lock
+
 # poetry
 #   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
 #   This is especially recommended for binary packages to ensure reproducibility, and is more
@@ -214,6 +126,15 @@ celerybeat.pid
 
 # SageMath parsed files
 *.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
 
 # Spyder project settings
 .spyderproject
@@ -246,65 +167,5 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-# PostgreSQL
-pg_*/
-*.pid
-postgresql*.conf
-postgresql.auto.conf
-postmaster.opts
-postmaster.pid
-pg_hba.conf
-pg_ident.conf
-*.log
-pg_stat_tmp/
-pg_replslot/
-pg_dynshmem/
-pg_notify/
-pg_serial/
-pg_snapshots/
-pg_stat/
-pg_subtrans/
-pg_tblspc/
-pg_twophase/
-pg_wal/
-pg_xact/
-
-# Migration checkpoints
-checkpoints/
-
-# Vector store files
-example_vector_store/
-vector_store/
-*.sqlite3
-**/chroma-embeddings.parquet
-**/chroma-collections.parquet
-**/chroma-embeddings/
-**/index_store/
-
-# Logs
-*.log
-logs/
-
-# Cache
-.cache/
-.pytest_cache/
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Streamlit
-.streamlit/watch*
-
-# Backups
-backups/
-*.bak
-*.backup
-*.sql
-
-# Misc
-.DS_Store
-.coverage
-htmlcov/
+# PyPI configuration file
+.pypirc
